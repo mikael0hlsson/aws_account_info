@@ -1,0 +1,28 @@
+{
+    "name": "AWS Identifier",
+    "description": "Makes it clear what aws account that you have open",
+    "version": "1.0",
+    "manifest_version": 3,
+    "host_permissions": [
+        "https://*.console.aws.amazon.com/",
+        "https://*.awsapps.com/*"
+    ],
+    "content_scripts": [       
+        {
+            "matches": [ 
+                "https://*.console.aws.amazon.com/*", 
+                "https://*.awsapps.com/*" ],
+            "js": [ "aws_console.js"],
+            "run_at": "document_end",
+            "all_frames": true  
+          }
+    ],
+    "action": {
+        "default_title": "AWS Account info",
+        "default_popup": "settings.html",
+        "default_icon": {
+          "16": "icons/icon16.png",
+          "32": "icons/icon32.png"
+        }
+      }
+  }
