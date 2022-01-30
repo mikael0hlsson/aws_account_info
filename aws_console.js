@@ -5,18 +5,18 @@ const PORTAL_ELEMENT_TAG_NAME = 'portal-application';
 const from_json = {
     accounts: [
         {
-            accountId: '014413428939',
-            displayName: 'DFE Prod',
+            accountId: 'XXXX',
+            displayName: 'Prod',
             color: '#f2ada0',
         },
         {
-            accountId: '935793292298',
-            displayName: 'DFE Test',
+            accountId: 'YYYY',
+            displayName: 'Test',
             color: '#FFFF00',
         },
         {
-            accountId: '968588151748',
-            displayName: 'DFE Dev',
+            accountId: 'ZZZZ',
+            displayName: 'Dev',
             color: '#a5d099',
         },
     ],
